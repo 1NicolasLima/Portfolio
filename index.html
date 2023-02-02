@@ -1,111 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Portfólio | Nicolas Lima</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/img/site-icon.png"
-    />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <!-- Navegação e início -->
-    <link rel="stylesheet" href="assets/css/navegacao-inicio.css" />
-    <!-- Sobre mim -->
-    <link rel="stylesheet" href="assets/css/sobre-mim.css" />
-    <!-- Projetos -->
-    <link rel="stylesheet" href="assets/css/projetos.css" />
-    <!-- Habilidades -->
-    <link rel="stylesheet" href="assets/css/habilidades.css" />
-    <!-- footer -->
-    <link rel="stylesheet" href="assets/css/footer.css" />
-  </head>
-  <body onload="escreverNome(nomeCompleto);">
-    <div>
-      <!-- menu -->
-      <input
-        id="close-menu"
-        class="close-menu"
-        type="checkbox"
-        aria-label="close-menu"
-        role="button"
-      />
-      <label
-        class="close-menu-label"
-        for="close-menu"
-        title="close menu"
-      ></label>
-      <div class="barra">
-        <div class="menu-centro">
-          <div class="barra-conteiner centralizador">
-            <div class="logo esquerda">
-              <a href="index.html"
-                ><h1> <span style="color: #528e6ba4;">Meu </span>portfólio</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Portfólio | Nicolas Lima</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/site-icon.png" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Navegação e início -->
+  <link rel="stylesheet" href="assets/css/navegacao-inicio.css" />
+  <!-- Sobre mim -->
+  <link rel="stylesheet" href="assets/css/sobre-mim.css" />
+  <!-- Projetos -->
+  <link rel="stylesheet" href="assets/css/projetos.css" />
+  <!-- Habilidades -->
+  <link rel="stylesheet" href="assets/css/habilidades.css" />
+  <!-- footer -->
+  <link rel="stylesheet" href="assets/css/footer.css" />
+
+</head>
+
+<body onload="escreverNome(nomeCompleto);">
+  <div>
+    <!-- menu -->
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu" role="button" />
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <div class="barra">
+      <div class="menu-centro">
+        <div class="barra-conteiner centralizador">
+          <div class="logo esquerda">
+            <a href="index.html">
+              <h1> <span style="color: #528e6ba4;">Meu </span>portfólio</h1>
             </a>
+          </div>
+          <nav class="direita">
+            <ul onclick="getElementById('close-menu').checked=false;">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre-mim">Sobre mim</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- menu -->
+
+    <!-- primeira tela -->
+    <section id="inicio">
+      <div class="altura-ajuste">
+        <div class="inicio centralizador">
+          <div class="ajustador organizador">
+            <div class="apresentacao">
+              <p class="descricao">
+                Olá, eu me chamo <br />
+                <span style="display: inline" class="meu-nome">Nícolas Lima.</span>
+                <br />
+                Desenvolvedor Front-end
+              </p>
+              <br />
+              <div class="linkedin">
+                <a href="https://www.linkedin.com/in/nicolas-araujo-3669a6232/" target="_blank"
+                  class="link">Linkedin</a>
+              </div>
             </div>
-            <nav class="direita">
-              <ul onclick="getElementById('close-menu').checked=false;">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-              </ul>
-            </nav>
+
+            <div class="desenho">
+              <img class="desenho2" src="assets/img/Eu-praia.jpeg" alt="Eu-em-desenho" />
+            </div>
           </div>
         </div>
       </div>
-      <!-- menu -->
+    </section>
+    <!-- primeira tela -->
 
-      <!-- primeira tela -->
-      <section id="inicio">
-        <div class="altura-ajuste">
-          <div class="inicio centralizador">
-            <div class="ajustador organizador">
-              <div class="apresentacao">
-                <p class="descricao">
-                  Olá, eu me chamo <br />
-                  <span style="display: inline" class="meu-nome"
-                    >Nícolas Lima.</span
-                  >
-                  <br />
-                  Desenvolvedor Front-end
-                </p>
-                <br />
-                <div class="linkedin">
-                  <a
-                    href="https://www.linkedin.com/in/nicolas-araujo-3669a6232/"
-                    target="_blank"
-                    class="link"
-                    >Linkedin</a
-                  >
-                </div>
-              </div>
-
-              <div class="desenho">
-                <img
-                  class="desenho2"
-                  src="assets/img/Eu-praia.jpeg"
-                  alt="Eu-em-desenho"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- primeira tela -->
-
-      <!-- sobre mim -->
-      <section id="sobre-mim">
-        <div class="centralizador">
-          <div class="ajustador-2">
-            <!-- <div class="avatar">
+    <!-- sobre mim -->
+    <section id="sobre-mim">
+      <div class="centralizador">
+        <div class="ajustador-2">
+          <!-- <div class="avatar">
               <img
                 class="desenho-bg"
                 src="assets/img/avatar.png"
@@ -129,127 +110,105 @@
               />
             </div>
             </div> -->
-            <div class="sobre-mim" style="margin: 0 auto;">
-              <h2>Sobre mim</h2>
-              <br />
-              <p>
-                Olá, me chamo Nícolas! Sou desenvolvedor desde 2021, conheça um pouco sobre minha história na tecnologia:
-              </p>
-              <br>
-              <p>
-                Durante a pandemia, foi quando iniciei minha jornada na programação com HTML, CSS e JavaScript desenvolvendo sites responsivos e projetos de cursos na internet. Desde então sou apaixonado pela área.
-              </p>
-              <br>
-              <p>
-                Desde fevereiro de 2022, venho estudando avidamente o mundo da web, visando me tornar um desenvolvedor Front-End. 
-              </p>
-              <br>
-              <p>Hoje meu maior foco é no desenvolvimento Front-End, com os Frameworks React | ReactJS.
+          <div class="sobre-mim" style="margin: 0 auto;">
+            <h2>Sobre mim</h2>
+            <br />
+            <p>
+              Olá, me chamo Nícolas! Sou desenvolvedor desde 2021, conheça um pouco sobre minha história na tecnologia:
+            </p>
+            <br>
+            <p>
+              Durante a pandemia, foi quando iniciei minha jornada na programação com HTML, CSS e JavaScript
+              desenvolvendo sites responsivos e projetos de cursos na internet. Desde então sou apaixonado pela área.
+            </p>
+            <br>
+            <p>
+              Desde fevereiro de 2022, venho estudando avidamente o mundo da web, visando me tornar um desenvolvedor
+              Front-End.
+            </p>
+            <br>
+            <p>Hoje meu maior foco é no desenvolvimento Front-End, com os Frameworks React | ReactJS.
               Meu estudo atualmente é atráves da Udemy.
-              </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sobre mim -->
+
+    <!-- Projetos -->
+    <section id="projetos">
+      <div class="centralizador projetos">
+        <h2 class="project">Projetos</h2>
+        <div class="projetos-itens">
+          <div class="pro">
+            <div class="typewriter">
+              <h1>EM BREVE</h1>
+            </div>
+          </div>
+          <div class="pro">
+            <div class="typewriter">
+              <h1>EM BREVE</h1>
+            </div>
+          </div>
+          <div class="pro">
+            <div class="typewriter">
+              <h1>EM BREVE</h1>
+            </div>
+          </div>
+          <div class="pro escondido">
+            <div class="typewriter">
+              <h1>EM BREVE</h1>
+            </div>
+          </div>
+          <div class="pro escondido">
+            <div class="typewriter">
+              <h1>EM BREVE</h1>
+            </div>
+          </div>
+          <div class="pro escondido">
+            <div class="typewriter">
+              <h1>EM BREVE</h1>
             </div>
           </div>
         </div>
-      </section>
-      <!-- sobre mim -->
 
-      <!-- Projetos -->
-      <section id="projetos">
-        <div class="centralizador projetos">
-          <h2 class="project">Projetos</h2>
-          <div class="projetos-itens">
-            <div class="pro">
-              <div class="typewriter">
-                <h1>EM BREVE</h1>
-              </div>
-            </div>
-            <div class="pro">
-              <div class="typewriter">
-                <h1>EM BREVE</h1>
-              </div>
-            </div>
-            <div class="pro">
-              <div class="typewriter">
-                <h1>EM BREVE</h1>
-              </div>
-            </div>
-            <div class="pro escondido">
-              <div class="typewriter">
-                <h1>EM BREVE</h1>
-              </div>
-            </div>
-            <div class="pro escondido">
-              <div class="typewriter">
-                <h1>EM BREVE</h1>
-              </div>
-            </div>
-            <div class="pro escondido">
-              <div class="typewriter">
-                <h1>EM BREVE</h1>
-              </div>
-            </div>
-          </div>
-
-          <div class="github-link">
-            <button>Ver mais</button>
-            <a
-              href="https://github.com/1NicolasLima?tab=repositories"
-              target="_blank"
-              >Repositórios no github</a
-            >
-          </div>
+        <div class="github-link">
+          <button>Ver mais</button>
+          <a href="https://github.com/1NicolasLima?tab=repositories" target="_blank">Repositórios no github</a>
         </div>
-      </section>
-      <!-- Projetos -->
+      </div>
+    </section>
+    <!-- Projetos -->
 
-      <!-- Habilidades -->
-      <section id="habilidades">
-        <div class="centralizador">
-          <div class="habilidades-pd">
-            <h2 class="project">Habilidades</h2>
-            <div class="skills-descricao">
-              <div class="conteiner-skills">
-                
-                <div class="skill-box skill2 css-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="assets/img/css.svg"
-                    alt="css-icon"
-                  />
-                </div>
+    <!-- Habilidades -->
+    <section id="habilidades">
+      <div class="centralizador">
+        <div class="habilidades-pd">
+          <h2 class="project">Habilidades</h2>
+          <div class="skills-descricao">
+            <div class="conteiner-skills">
 
-                <div class="skill-box skill3 js-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="assets/img/js.svg"
-                    alt="js-icon"
-                  />
-                </div>
+              <div class="skill-box skill2 css-skill">
+                <img class="icones-habilidades" src="assets/img/css.svg" alt="css-icon" />
+              </div>
 
-                <div class="skill-box skill7">
-                  <img
-                    class="icones-habilidades"
-                    src="assets/img/react.svg"
-                    alt="react-icon"
-                  />
-                </div>
-  
-              
-                <div class="skill-box skill9 git-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="assets/img/git.svg"
-                    alt="git-icon"
-                  />
-                </div>
-                <div class="skill-box skill10 github-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="assets/img/github.svg"
-                    alt="github-icon"
-                  />
-                </div>
-  
+              <div class="skill-box skill3 js-skill">
+                <img class="icones-habilidades" src="assets/img/js.svg" alt="js-icon" />
+              </div>
+
+              <div class="skill-box skill7">
+                <img class="icones-habilidades" src="assets/img/react.svg" alt="react-icon" />
+              </div>
+
+
+              <div class="skill-box skill9 git-skill">
+                <img class="icones-habilidades" src="assets/img/git.svg" alt="git-icon" />
+              </div>
+              <div class="skill-box skill10 github-skill">
+                <img class="icones-habilidades" src="assets/img/github.svg" alt="github-icon" />
+              </div>
+
               <div class="conteiner-descricao">
                 <p class="texto-descricao">
                   Passe o mouse por cima de alguma habilidade para ler a
@@ -259,17 +218,17 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- Habilidades -->
+    </section>
+    <!-- Habilidades -->
 
-      <!-- footer -->
-      <footer class="footer">
-        <div class="footer-conteiner">
-          <div class="contato-creditos">
-            E-mail: nicolasaraujo845@gmail.com <br />
-            By Nicolas Lima <br />
-          </div>
-          <!-- <div class="icons">
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-conteiner">
+        <div class="contato-creditos">
+          E-mail: nicolasaraujo845@gmail.com <br />
+          By Nicolas Lima <br />
+        </div>
+        <!-- <div class="icons">
             <div class="links links1">
               <a href="https://github.com/Math-Vieira" target="_blank">
                 <img
@@ -292,12 +251,14 @@
               </a>
             </div>
           </div> -->
-        </div>
-      </footer>
-      <!-- footer -->
-    </div>
-    <script src="./assets/js/scroll.js"></script>
-    <script src="./assets/js/habilidades.js"></script>
-    <script src="./assets/js/maquina_escrever.js"></script>
-  </body>
+      </div>
+    </footer>
+    <!-- footer -->
+  </div>
+  <script src="./assets/js/scroll.js"></script>
+  <script src="./assets/js/habilidades.js"></script>
+  <script src="./assets/js/maquina_escrever.js"></script>
+  <script src="./assets/js/responsividade.js"></script>
+</body>
+
 </html>
