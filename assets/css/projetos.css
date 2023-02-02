@@ -1,0 +1,162 @@
+#projetos {
+    background-color: #2b292a;
+}
+
+.projetos {
+    padding-top: 93px;
+}
+
+.projetos h2, .projetos a {
+    text-align: center;
+}
+
+.projetos h2 {
+    padding-bottom: 70px;
+}
+
+button {
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #528e6b48;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover {
+    background-color: #73b0b3;
+    letter-spacing: 4px;
+}
+
+.github-link {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.projetos a {
+    display: inline;
+}
+
+.pro {
+    background-color: #528e6b48;
+    height: 195px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.pro div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.pro:hover {
+    letter-spacing: 5px;
+}
+
+.pro div {
+    /* background-color: #528e6b48; */
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    /* transform: rotate(-50deg); */
+}
+
+.escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.projetos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
+}
+
+@media (max-width:1200px) {
+  .projetos{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #projetos {
+      display: flex;
+      justify-content: center;
+  }
+
+  .projetos-itens {
+      flex-direction: column;
+  }
+
+}
+@media (max-width:950px) {
+    .pro {
+        max-width: 300px;
+    }
+
+}
+
+
+
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    /* border-right: 0.15em solid orange;  */
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: 0.15em; 
+    animation: typing 3.5s steps(120, end) alternate infinite,
+      blink-caret 0.5s step-end infinite, rotateText 3.5s ease alternate infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  
+  @keyframes rotateText {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(10deg) scale(1.5) translateX(10px) skewY(10deg);
+    }
+    75% {
+      transform: rotate(-10deg) scale(0.8) translateX(-10px) skewY(-10deg);
+    }
+    100% {
+      transform: rotate(5deg) scale(1.2) translateX(5px) skewY(5deg);
+    }
+  }
