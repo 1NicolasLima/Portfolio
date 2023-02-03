@@ -1,20 +1,19 @@
-const paragrafoHab = document.querySelector('.texto-descricao')
 
-const screen = {
-    'Aperte no Icone para ler a descrição': 400,
-};
+function sizeOfThings() {
+    var windowWidth = window.innerWidth;
 
-window.addEventListener('resize', resizeHandler);
-
-resizeHandler()
-
-function resizeHandler() {
-    const iw = window.innerWidth
-
-    let size = null
-
-    for (let s in screen) {
-        if (iw >= screen[s]) size = s
+    if (windowWidth <= 1000) {
+        document.querySelector('.texto-descricao').innerHTML = 'Aperte o icone de alguma habilidade para mais detalhes.'
+        // window.addEventListener('mouseout', (evento) => {
+        //     descricao.innerHTML = 'Aperte o icone de alguma habilidade para mais detalhes.';
+        // });
+    } else {
+        document.querySelector('.texto-descricao').innerHTML = 'Clique no icone de alguma habilidade para mais detalhes.'
     }
-    paragrafoHab.innerHTML = size
-}
+
+};
+sizeOfThings();
+
+window.addEventListener('resize', function () {
+    sizeOfThings();
+});

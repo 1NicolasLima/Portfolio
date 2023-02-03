@@ -24,15 +24,15 @@ const meses = [
 for (let i = 0; i < skills.length; i++) {
   const elemento = skills[i];
   const index = i;
-  elemento.addEventListener('mouseover', (evento) => {
+  elemento.addEventListener('click', (evento) => {
     const tempoDeExperiencia = Math.round((dataHoje - dataInicio[index]) / (1000 * 60 * 60 * 24 * 30));
     descricao.innerHTML = `<p>${sobreSkill[index]} </p><p>Tempo de experiência: ${tempoDeExperiencia} ${tempoDeExperiencia > 1 ? 'meses' : 'mês'}</p>`;
   });
-  elemento.addEventListener('mouseout', (evento) => {
-    descricao.innerHTML = 'Passe o mouse por cima de alguma habilidade para ler a descrição.';
-  });
+  // elemento.addEventListener('mouseout', (evento) => {
+  //   descricao.innerHTML = 'Passe o mouse por cima de alguma habilidade para ler a descrição.';
+  // });
 }
-``
+
 
 
 
