@@ -57,6 +57,32 @@ button:hover {
     transition: ease-in-out 0.3s;
 }
 
+.pro1 {
+  background: #528e6b48;
+  height: 195px;
+  width: 310px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
+}
+
+.pro1:hover {
+  background: #81c49948;
+  height: 195px;
+  width: 310px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
+}
+
 .pro div p {
     font-family: 'Fira Sans', sans-serif;
     font-size: 20px;
@@ -73,6 +99,24 @@ button:hover {
     text-align: center;
     padding: 5% 0;
     /* transform: rotate(-50deg); */
+}
+
+.pro1 div img{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  opacity: .5;
+}
+
+.pro1 div img:hover{
+  margin: 0 auto;
+  display: flex;
+  opacity: .7;
+}
+
+.pro1 div a{
+  text-align: center;
+  display: block;
 }
 
 .escondido {
@@ -160,3 +204,5 @@ button:hover {
       transform: rotate(5deg) scale(1.2) translateX(5px) skewY(5deg);
     }
   }
+
+  
