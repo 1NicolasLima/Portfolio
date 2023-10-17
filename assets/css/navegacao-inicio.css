@@ -43,12 +43,13 @@ a h1:hover {
 
 .barra {
     width: 100%;
-    background: #c4c4c41c;
+    background: #0c0c0c52;
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     z-index: 1;
-    border-bottom: solid 1px rgb(115, 176, 179);
+    /* border-bottom: solid 1px rgb(115, 176, 179); */
+    border-bottom: solid 1px rgb(199 199 199);
 }
 
 .barra-conteiner {
@@ -103,30 +104,42 @@ a h1:hover {
 .linkedin {
     width: 479px;
     height: 85px;
-    background-color: #528e6b48;
-    display: flex;
-    justify-content: center;
+    background-color: none;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 62px;
+    display: flex;
 }
 
 .linkedin a {
-    width: 100%;
-    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
 }
 
-.link {
-    font-size: 25px;
-    width: 50%;
+.social-icons{
+    width: 50px;
+}
+
+.linkedin a:hover {
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .link {
     text-align: center;
     padding: 12px 0;
     transition: ease-in-out 0.3s;
-}
+} */
 
-.link:hover {
+/* .link:hover {
     letter-spacing: 5px;
     color: white;
-}
+} */
 
 .desenho {
     width: 300px;
@@ -212,6 +225,8 @@ a h1:hover {
     .linkedin {
         width: 479px;
         margin-top: 15px;
+        display: flex;
+        justify-content: center;
     }
 
     .esquerda {
