@@ -166,12 +166,14 @@
         <div class="projetos-itens">
           
           <div class="pro1">
-            <img class="" src="assets/img/Wallpaper-Projeto-Calc.png" alt="">
-              <div class="button">
+            <div class="typewriter">
+              <img class="" src="assets/img/Wallpaper-Projeto-Calc.png" alt="">
+              <div>
                 <a style="display: none;" href="https://calculadora-react-dun.vercel.app/">
                   <button>Visite o Site</button>
                 </a>
               </div>
+            </div>
           </div>
           <div class="pro1">
             <div class="typewriter">
@@ -186,25 +188,43 @@
               <h1>EM BREVE</h1>
             </div>
           </div>
-          <div class="pro escondido">
+          <div class="pro teste" id="">
             <div class="typewriter">
               <h1>EM BREVE</h1>
             </div>
           </div>
-          <div class="pro escondido">
+          <!-- <div class="pro teste">
             <div class="typewriter">
               <h1>EM BREVE</h1>
             </div>
-          </div>
-          <div class="pro escondido">
+          </div> -->
+          <!-- <div class="pro teste">
             <div class="typewriter">
               <h1>EM BREVE</h1>
             </div>
-          </div>
+          </div> -->
         </div>
 
+        <script>
+          const showEscondido1 = document.getElementsByClassName('teste')[0]
+          function showEscondido(){
+            showEscondido1.style.display = 'flex'
+          }
+          
+          // const unShowEscondido1 = document.getElementsByClassName('teste')[0]
+          // function unShowEscondido(){
+          //   unShowEscondido1.style.display = 'none'
+          // }
+        </script>
+
         <div class="github-link">
-          <button>Ver mais</button>
+          <button onclick="{
+              showEscondido(), document.getElementById('botaoVerMais').style.display = 'none'
+          }
+            " id="botaoVerMais">Ver mais</button>
+
+          <!-- <button onclick="{unShowEscondido(), document.getElementById('botaoVerMenos').style.display = 'none'}" id="botaoVerMenos">Ver menos</button> -->
+
           <a href="https://github.com/1NicolasLima?tab=repositories" target="_blank">Repositórios no github</a>
         </div>
       </div>
@@ -218,25 +238,33 @@
           <h2 class="project">Habilidades</h2>
           <div class="skills-descricao">
             <div class="conteiner-skills">
-
-              <div class="skill-box skill2 css-skill">
-                <img class="icones-habilidades" src="assets/img/css.svg" alt="css-icon" />
-              </div>
-
-              <div class="skill-box skill3 js-skill">
-                <img class="icones-habilidades" src="assets/img/js.svg" alt="js-icon" />
-              </div>
-
-              <div class="skill-box skill7">
-                <img class="icones-habilidades" src="assets/img/react.svg" alt="react-icon" />
-              </div>
-
-
-              <div class="skill-box skill9 git-skill">
-                <img class="icones-habilidades" src="assets/img/git.svg" alt="git-icon" />
-              </div>
-              <div class="skill-box skill10 github-skill">
-                <img class="icones-habilidades" src="assets/img/github.svg" alt="github-icon" />
+              <div class="skills-column">
+                <div class="skill-box skill12">
+                  <img class="icones-habilidades" src="assets/img/typescript.svg" alt="css-icon" />
+                </div>
+                
+                <div class="skill-box skill7">
+                  <img class="icones-habilidades" src="assets/img/react.svg" alt="react-icon" />
+                </div>
+  
+                <div class="skill-box skill4">
+                  <img class="icones-habilidades" src="assets/img/node.svg" alt="react-icon" />
+                </div>
+                
+                <div class="skill-box skill3 js-skill">
+                  <img class="icones-habilidades" src="assets/img/js.svg" alt="js-icon" />
+                </div>
+  
+                <div class="skill-box skill2 css-skill">
+                  <img class="icones-habilidades" src="assets/img/css.svg" alt="css-icon" />
+                </div>
+  
+                <div class="skill-box skill9 git-skill">
+                  <img class="icones-habilidades" src="assets/img/git.svg" alt="git-icon" />
+                </div>
+                <div class="skill-box skill10 github-skill">
+                  <img class="icones-habilidades" src="assets/img/github.svg" alt="github-icon" />
+                </div>
               </div>
 
               <div class="conteiner-descricao">
@@ -252,13 +280,13 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer-conteiner">
-        <div class="contato-creditos">
-          E-mail: nicolasaraujo845@gmail.com <br />
-          By Nicolas Lima <br />
-        </div>
-        <!-- <div class="icons">
+        <div class="icons">
+          <div class="contato-creditos">
+            E-mail: nicolasaraujo845@gmail.com <br />
+            By Nicolas Lima <br />
+          </div>
             <div class="links links1">
-              <a href="https://github.com/Math-Vieira" target="_blank">
+              <a href="https://github.com/1NicolasLima?tab=repositories" target="_blank">
                 <img
                   class="transparente"
                   src="/assets/img/githubff.svg"
@@ -268,7 +296,7 @@
             </div>
             <div class="links links2">
               <a
-                href="https://www.linkedin.com/in/ymatheus-vieira/"
+                href="https://www.linkedin.com/in/nicolas-araujo-3669a6232/"
                 target="_blank"
               >
                 <img
@@ -278,7 +306,7 @@
                 />
               </a>
             </div>
-          </div> -->
+          </div>
       </div>
     </footer>
     <!-- footer -->
