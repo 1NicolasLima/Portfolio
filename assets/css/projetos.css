@@ -108,11 +108,8 @@ button:hover {
   display: flex;
 }
 
-.pro1 div a{
-  display: flex;
-  padding-bottom: 40px;
-  padding-left: 1;
-  flex-direction: column;
+.pro1 a:hover{
+  
 }
 
 .escondido {
