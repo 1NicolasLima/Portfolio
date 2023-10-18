@@ -119,6 +119,15 @@ button:hover {
   display: none;
 }
 
+.projetoCalculadora{
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.projetoCalculadora:hover{
+  opacity: 0.5;
+}
+
 #escondido {
     opacity: 0;
     display: none;
