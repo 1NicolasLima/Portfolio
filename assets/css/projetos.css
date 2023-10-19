@@ -119,14 +119,15 @@ button:hover {
   display: none;
 }
 
-.projetoCalculadora{
+.projetoCalculadora, .ProjetoAgendaVirtual{
   opacity: 0.8;
   transition: 1s;
 }
 
-.projetoCalculadora:hover{
+.projetoCalculadora:hover, .ProjetoAgendaVirtual:hover{
   opacity: 0.5;
 }
+
 
 #escondido {
     opacity: 0;
@@ -165,8 +166,6 @@ button:hover {
     }
 
 }
-
-
 
 .typewriter h1 {
     color: #fff;
