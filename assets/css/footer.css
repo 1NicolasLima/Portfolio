@@ -40,6 +40,16 @@
     justify-content: center;
 }
 
+@media (max-width:900px) {
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        margin-right: 18px;
+    }
+}
+
 @media (max-width:1200px) {
     .contato-creditos{
         text-align: center;
